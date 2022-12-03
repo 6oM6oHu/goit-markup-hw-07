@@ -1,3 +1,66 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 300ms linear, visibility 300ms linear;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: $white-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scaleX(1);
+  transition: transform 300ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleX(1.5);
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $white-bg-color;
+
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal__icon {
+  fill: var(--black-text-color);
+
+  transition: fill $transit;
+
+  .close-modal-btn:hover & {
+    fill: $brand-color;
+  }
+}
+
 .mine-form {
 }
 .mine-form_title {
@@ -93,9 +156,6 @@
     border: 1px solid $brand-color;
   }
 }
-.form-terms__check {
-  @extend %hidden;
-}
 
 .form-terms__label {
   @include flex--center;
@@ -105,20 +165,10 @@
   cursor: pointer;
 }
 
-.form-terms__wrap {
-  content: '';
-  width: 16px;
-  height: 15px;
-  padding: 0;
-  margin: 0;
-  display: block;
-
-  @include flex--center;
-
-  fill: transparent;
-
+.form-terms__icon {
   border: 2px solid $secondary-text-color;
-  border-radius: 2px;
+  fill: transparent;
+  border-radius: 4px;
 
   .form-terms__check:checked + .form-terms__label & {
     background-color: $brand-color;
@@ -126,13 +176,10 @@
     fill: $white-icon-color;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+
   .form-terms__check:focus + .form-terms__label & {
     border-color: $brand-color;
   }
-}
-
-.form-terms__check:focus + .form-terms__label .form-terms__wrap {
-  border-color: $brand-color;
 }
 
 .form-terms__link {

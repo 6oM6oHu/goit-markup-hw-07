@@ -1,3 +1,16 @@
+.page-header {
+  width: 100%;
+  @include sectionSet($p-top: 0, $p-bot: 0);
+
+  background-color: $white-bg-color;
+  border: 1px solid #ececec;
+  border-top: none;
+}
+
+.logo-header__text {
+  color: $black-text-color;
+}
+
 .page-header__nav {
   @include flex--center;
 }
@@ -42,4 +55,30 @@
     background-color: $brand-color;
     border-radius: 2px;
   }
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+  gap: $flex-gap;
+}
+
+.contacts-list__link {
+  @include flex--center;
+  @extend %navLinkPadding;
+  gap: 10px;
+
+  font-weight: 500;
+
+  color: $primary-text-color;
+  transition: color $transit;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+.contacts-list_icon {
+  fill: currentColor;
 }

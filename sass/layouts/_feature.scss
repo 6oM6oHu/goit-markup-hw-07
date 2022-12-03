@@ -3,10 +3,6 @@
   @include sectionSet($text-aln: left);
 }
 
-.page-feature-title {
-  @extend %hidden;
-}
-
 .feature-list {
   display: flex;
   gap: $flex-gap;

@@ -13,10 +13,17 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./dist/css/partfolio.min.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body class="page">
     <!-- Header -->
@@ -54,213 +61,213 @@
     </header>
     <!-- main  -->
     <main>
-      <section class="portfolio section">
+      <section class="portfolio">
         <div class="container">
-          <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="filter-list list" data-aos="zoom-out-up">
-            <li class="filter-item">
-              <button class="radio-button" type="button">Усі</button>
+          <h1 class="hidden">Портфоліо</h1>
+          <ul class="filter-list" data-aos="zoom-out-up">
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">Усі</button>
             </li>
-            <li class="filter-item">
-              <button class="radio-button" type="button">Веб-сайти</button>
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">Веб-сайти</button>
             </li>
-            <li class="filter-item">
-              <button class="radio-button" type="button">Додатки</button>
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">Додатки</button>
             </li>
-            <li class="filter-item">
-              <button class="radio-button" type="button">Дизайн</button>
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button class="radio-button" type="button">Маркетинг</button>
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="projects-list list">
-            <li class="projects-item" data-aos="fade-right">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+          <ul class="projects-list">
+            <li class="projects-list__item" data-aos="fade-right">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/technokryk.jpeg"
                     alt="Приклад сайта на ноутбуці"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Технокряк</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Технокряк</h2>
+                  <p class="projects-list__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item" data-aos="flip-right">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+            <li class="projects-list__item" data-aos="flip-right">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/poster.jpeg"
                     alt="Два хлопця грають у баскетбол"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="projects-text">Дизайн</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Постер New Orlean vs Golden Star</h2>
+                  <p class="projects-list__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item" data-aos="fade-left">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+            <li class="projects-list__item" data-aos="fade-left">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/seafood.jpeg"
                     alt="Логотип у формі сірої риби"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Ресторан Seafood</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Ресторан Seafood</h2>
+                  <p class="projects-list__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item" data-aos="fade-right">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+            <li class="projects-list__item" data-aos="fade-right">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/prime.jpeg"
                     alt="фото чорних навушників на білому фоні"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Проєкт Prime</h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Проєкт Prime</h2>
+                  <p class="projects-list__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item" data-aos="flip-right">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+            <li class="projects-list__item" data-aos="flip-right">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/boxes.jpeg"
                     alt="дві коробки з разнимі стилями"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Проєкт Boxes</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Проєкт Boxes</h2>
+                  <p class="projects-list__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item" data-aos="fade-left">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+            <li class="projects-list__item" data-aos="fade-left">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/inspiration.jpeg"
                     alt="монітор, на якому зображен веб сервіс проекту"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Inspiration has no Borders</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Inspiration has no Borders</h2>
+                  <p class="projects-list__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item" data-aos="fade-right">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+            <li class="projects-list__item" data-aos="fade-right">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/limitededition.jpeg"
                     alt="Розгорнутий білій журнал"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Видання Limited Edition</h2>
-                  <p class="projects-text">Дизайн</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Видання Limited Edition</h2>
+                  <p class="projects-list__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item" data-aos="flip-right">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+            <li class="projects-list__item" data-aos="flip-right">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/lab.jpeg"
                     alt="Логотип компаніі Lab"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Проєкт LAB</h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Проєкт LAB</h2>
+                  <p class="projects-list__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="projects-item" data-aos="fade-left">
-              <a href="" class="link projects-link">
-                <div class="projects-overlay">
+            <li class="projects-list__item" data-aos="fade-left">
+              <a href="" class="projects-list__link">
+                <div class="pic-inner">
                   <img
                     src="./images/portfolio/growing.jpeg"
                     alt="Чоловічі руки, які печатають текст на ноутбуці"
-                    class="projects-cover"
+                    class="projects-list__pic"
                     width="370"
                   />
-                  <p class="text-overlay">
+                  <p class="projects-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="bot-content">
-                  <h2 class="project-title">Growing Business</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="content-inner">
+                  <h2 class="projects-list__titlle">Growing Business</h2>
+                  <p class="projects-list__text">Додаток</p>
                 </div>
               </a>
             </li>
