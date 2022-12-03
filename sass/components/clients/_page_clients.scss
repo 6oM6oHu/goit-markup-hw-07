@@ -1,0 +1,35 @@
+.page-clients {
+  @include sectionSet;
+}
+
+.clients-list {
+  display: flex;
+  gap: $flex-gap;
+}
+.clients-list__item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+}
+
+.clients-list__link {
+  @include flex--center;
+  width: 100%;
+  height: 100%;
+
+  color: $social-icon-color;
+  border: 1px solid $social-icon-color;
+  border-radius: 4px;
+
+  transition: color $transit, border $transit;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+    border: 1px solid $brand-color;
+  }
+}
+
+.clients-list__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,7 @@
+.page-header {
+  width: 100%;
+  @include sectionSet($p-top: 0, $p-bot: 0);
+
+  background-color: $white-bg-color;
+  border-bottom: 1px solid #ececec;
+}

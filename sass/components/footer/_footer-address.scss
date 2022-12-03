@@ -1,0 +1,15 @@
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  font-style: normal;
+}
+
+.address-list__link {
+  color: $primary-text-color;
+}
+
+.address-list__link--white {
+  color: $white-text-color;
+}

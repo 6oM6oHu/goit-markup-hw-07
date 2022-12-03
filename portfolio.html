@@ -13,58 +13,38 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css/style.css" />
+    <link rel="stylesheet" href="./dist/css/partfolio.min.css" />
   </head>
   <body class="page">
     <!-- Header -->
-    <header class="header">
-      <nav class="container main-nav">
-        <a href="./index.html" class="logo"
-          >Web<span class="head-style">Studio</span></a
-        >
-        <ul class="site-nav list">
-          <li class="site-nav-item">
-            <a
-              href="./index.html"
-              class="site-nav-link link"
-              rel="noreferrer noopener"
-              >Студія</a
-            >
+    <header class="page-header">
+      <nav class="container page-header__nav">
+        <a href="./index.html" class="logo">Web<span class="logo-header__text">Studio</span></a>
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="./index.html" class="site-nav__link" rel="noreferrer noopener">Студія</a>
           </li>
-          <li class="site-nav-item">
-            <a href="./portfolio.html" class="site-nav-link link current"
-              >Портфоліо</a
-            >
+          <li class="site-nav__item">
+            <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
           </li>
-          <li class="site-nav-item">
-            <a href="" class="site-nav-link link" rel="noreferrer noopener"
-              >Контакти</a
-            >
+          <li class="site-nav__item">
+            <a href="" class="site-nav__link" rel="noreferrer noopener">Контакти</a>
           </li>
         </ul>
-        <ul class="contacts-list list">
-          <li class="contacts-item">
-            <a class="contact-link link" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16" height="12">
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="mailto:info@devstudio.com">
+              <svg class="contacts-list_icon" width="16" height="12">
                 <use href="./images/social-icon.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a
-              class="contact-link phone-icon phone link"
-              href="tel:+380961111111"
-              ><svg class="contact-icon" width="10" height="16">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="tel:+380961111111"
+              ><svg class="contacts-list_icon" width="10" height="16">
                 <use href="./images/social-icon.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -105,9 +85,9 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
@@ -126,15 +106,13 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
-                  <h2 class="project-title">
-                    Постер New Orlean vs Golden Star
-                  </h2>
+                  <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
                   <p class="projects-text">Дизайн</p>
                 </div>
               </a>
@@ -149,9 +127,9 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
@@ -170,9 +148,9 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
@@ -191,9 +169,9 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
@@ -212,9 +190,9 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
@@ -233,9 +211,9 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
@@ -254,9 +232,9 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
@@ -275,9 +253,9 @@
                     width="370"
                   />
                   <p class="text-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="bot-content">
@@ -291,63 +269,61 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer section">
+    <footer class="page-footer">
       <div class="container footer-content">
-        <div class="footer-adress">
-          <a href="./index.html" class="logo"
-            >Web<span class="foot-style">Studio</span></a
+        <div class="footer-address">
+          <a href="./index.html" class="logo footer-logo--margin"
+            >Web<span class="logo-footer__text">Studio</span></a
           >
           <address>
-            <ul class="address-list list">
-              <li class="address-item">
+            <ul class="address-list">
+              <li class="address-list__item">
                 <a
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="street link"
+                  class="address-list__link address-list__link--white"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="address-item">
-                <a class="mail link" href="mailto:info@devstudio.com"
+              <li class="address-list__item">
+                <a class="address-list__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-item">
-                <a class="phone link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="address-list__item">
+                <a class="address-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="social footer-social">
-          <strong class="social-title">приєднуйтесь</strong>
-          <ul class="social-team-list">
-            <li class="social-team-item">
-              <a href="" class="social-team-link footer-social-link">
-                <svg class="social-team-icon">
+          <strong class="footer_wrap__title">приєднуйтесь</strong>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link footer-social__link">
+                <svg class="social-list__icon footer-social__icon">
                   <use href="./images/social-icon.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-team-item">
-              <a href="" class="social-team-link footer-social-link">
-                <svg class="social-team-icon">
+            <li class="social-list__item">
+              <a href="" class="social-list__link footer-social__link">
+                <svg class="social-list__icon footer-social__icon">
                   <use href="./images/social-icon.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-team-item">
-              <a href="" class="social-team-link footer-social-link">
-                <svg class="social-team-icon">
+            <li class="social-list__item">
+              <a href="" class="social-list__link footer-social__link">
+                <svg class="social-list__icon footer-social__icon">
                   <use href="./images/social-icon.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-team-item">
-              <a href="" class="social-team-link footer-social-link">
-                <svg class="social-team-icon">
+            <li class="social-list__item">
+              <a href="" class="social-list__link footer-social__link">
+                <svg class="social-list__icon footer-social__icon">
                   <use href="./images/social-icon.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -355,22 +331,20 @@
           </ul>
         </div>
         <div class="footer-wrap">
-          <form action="" class="footer-form">
-            <strong class="social-title send-title"
-              >підпишіться на розсилку</strong
-            >
+          <form action="#" class="footer-form">
+            <strong class="footer_wrap__title">підпишіться на розсилку</strong>
             <div class="foot-input-wrap">
               <input
                 type="email"
-                class="footer-input"
+                class="footer-form__input"
                 name="email"
                 id="footer-name"
                 required
                 placeholder="E-mail"
               />
-              <button type="submit" class="btn footer-btn">
+              <button type="submit" class="btn footer-form_button">
                 Відправити
-                <svg class="icon-send" width="24px" height="24px">
+                <svg class="form-button__icon" width="24px" height="24px">
                   <use href="./images/social-icon.svg#icon-send"></use>
                 </svg>
               </button>

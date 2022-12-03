@@ -1,0 +1,23 @@
+.page-footer {
+  @include sectionSet($p-top: 60px, $p-bot: 60px, $text-aln: none);
+  margin: 0 auto;
+  background-color: $footer-bg-color;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+  gap: 93px;
+}
+
+.footer_wrap__title {
+  display: block;
+  margin-top: 0;
+
+  width: 100%;
+
+  text-transform: uppercase;
+  font-weight: 700;
+
+  color: $white-text-color;
+}

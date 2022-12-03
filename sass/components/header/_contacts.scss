@@ -1,0 +1,25 @@
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+  gap: $flex-gap;
+}
+
+.contacts-list__link {
+  @include flex--center;
+  @extend %navLinkPadding;
+  gap: 10px;
+
+  font-weight: 500;
+
+  color: $primary-text-color;
+  transition: color $transit;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+.contacts-list_icon {
+  fill: currentColor;
+}

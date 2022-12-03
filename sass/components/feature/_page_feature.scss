@@ -1,0 +1,40 @@
+.page-feature {
+  background-color: $white-bg-color;
+  @include sectionSet($text-aln: left);
+}
+
+.page-feature-title {
+  @extend %hidden;
+}
+
+.feature-list {
+  display: flex;
+  gap: $flex-gap;
+}
+
+.feature-list_item {
+  flex-basis: calc((100% - 3 * $flex-gap) / 4);
+}
+
+.feature-wrap {
+  @include flex--center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $feature-bg-icon-color;
+}
+
+.feature-list__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: $secondary-text-color;
+}
+
+.feature-list__text {
+  line-height: 1.7;
+}
