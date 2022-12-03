@@ -324,6 +324,7 @@ body {
 
 .content-inner {
   padding: 20px 24px;
+  text-align: left;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
